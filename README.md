@@ -18,10 +18,16 @@
    
 ### Дополнительные материалы, которые могут быть полезны для выполнения задания
 
-Задание 1 image image image Задание 2
+Задание 1
+![image](https://github.com/user-attachments/assets/a866fe36-bc59-4854-99b2-b919c255b817)
+![image](https://github.com/user-attachments/assets/a5264b64-4c54-4587-9df2-81ea6d50ac73)
+![image](https://github.com/user-attachments/assets/cfd01d64-19c1-48c2-99ec-0307430377a8)
 
-image image image image
-```
+Задание 2
+![image](https://github.com/user-attachments/assets/66780e96-971c-4ea5-a775-8b95a6c6012a)
+![image](https://github.com/user-attachments/assets/5d6edfe5-acf8-4157-83ab-7c502e00fa38)
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота](ссылка на скриншот)`
+Задание 3
+![image](https://github.com/user-attachments/assets/ea89ecff-989e-4b0f-8f1a-8c41ca768641)
+![image](https://github.com/user-attachments/assets/f6939f0e-063c-465d-b1ad-e29d3d11271a)
+
