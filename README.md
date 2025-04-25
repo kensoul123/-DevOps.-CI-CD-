@@ -23,6 +23,7 @@
 ![image](https://github.com/user-attachments/assets/37ae411b-4d55-4704-ab29-23cdb88bb118)
 ![image](https://github.com/user-attachments/assets/ead027b8-9d60-46c0-ba0b-799f42238f91)
 ![image](https://github.com/user-attachments/assets/8ff6ad60-a863-458a-9f4f-8e5611b41b56)
+![image](https://github.com/user-attachments/assets/0483e282-1f72-43e1-a1d0-b7142ecfd927)
 
 
 Задание 2
