@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`DevOps. CI/CD`" - `Гречихин Юрий`
+# Домашнее задание к занятию "`Система мониторинга Zabbix. Часть 2`" - `Гречихин Юрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -19,15 +19,24 @@
 ### Дополнительные материалы, которые могут быть полезны для выполнения задания
 
 Задание 1
-![image](https://github.com/user-attachments/assets/a866fe36-bc59-4854-99b2-b919c255b817)
-![image](https://github.com/user-attachments/assets/a5264b64-4c54-4587-9df2-81ea6d50ac73)
-![image](https://github.com/user-attachments/assets/cfd01d64-19c1-48c2-99ec-0307430377a8)
+![image](https://github.com/user-attachments/assets/3fdc6941-b951-4a6b-943f-4769cbb95083)
+![image](https://github.com/user-attachments/assets/37ae411b-4d55-4704-ab29-23cdb88bb118)
+![image](https://github.com/user-attachments/assets/ead027b8-9d60-46c0-ba0b-799f42238f91)
+
 
 Задание 2
-![image](https://github.com/user-attachments/assets/66780e96-971c-4ea5-a775-8b95a6c6012a)
-![image](https://github.com/user-attachments/assets/5d6edfe5-acf8-4157-83ab-7c502e00fa38)
+![image](https://github.com/user-attachments/assets/761c0b34-3820-4945-9f6e-89afc9e6c891)
+![image](https://github.com/user-attachments/assets/48433cba-6976-4bd3-b16c-11151f701d5e)
+
+
 
 Задание 3
-![image](https://github.com/user-attachments/assets/ea89ecff-989e-4b0f-8f1a-8c41ca768641)
-![image](https://github.com/user-attachments/assets/f6939f0e-063c-465d-b1ad-e29d3d11271a)
+![image](https://github.com/user-attachments/assets/8fb9affa-eeb4-4118-83dd-d8ee0ee83e89)
+![image](https://github.com/user-attachments/assets/163ea835-3384-4aee-a382-da0d83d0ca22)
+![image](https://github.com/user-attachments/assets/f7466895-180f-45e4-8b7a-d84e79629626)
+![image](https://github.com/user-attachments/assets/2f6ede61-896f-41cb-93e6-143678505898)
+Задание 4
+![image](https://github.com/user-attachments/assets/df8b3cb1-b185-4dc0-9071-8502ec6d0815)
+
+
 
