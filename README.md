@@ -37,8 +37,11 @@
 ![image](https://github.com/user-attachments/assets/163ea835-3384-4aee-a382-da0d83d0ca22)
 ![image](https://github.com/user-attachments/assets/f7466895-180f-45e4-8b7a-d84e79629626)
 ![image](https://github.com/user-attachments/assets/2f6ede61-896f-41cb-93e6-143678505898)
+![image](https://github.com/user-attachments/assets/2c9f0647-976c-44fb-859f-318d19134fc1)
+
 Задание 4
-![image](https://github.com/user-attachments/assets/df8b3cb1-b185-4dc0-9071-8502ec6d0815)
+![image](https://github.com/user-attachments/assets/60f70de1-4fcf-4d8a-a67e-0f2991f673e5)
+
 
 
 
