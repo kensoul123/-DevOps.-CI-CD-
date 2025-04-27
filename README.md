@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`Система мониторинга Zabbix. Часть 2`" - `Гречихин Юрий`
+# Домашнее задание к занятию "`Disaster Recovery. FHRP и Keepalived`" - `Гречихин Юрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -19,28 +19,22 @@
 ### Дополнительные материалы, которые могут быть полезны для выполнения задания
 
 Задание 1
-![image](https://github.com/user-attachments/assets/3fdc6941-b951-4a6b-943f-4769cbb95083)
-![image](https://github.com/user-attachments/assets/37ae411b-4d55-4704-ab29-23cdb88bb118)
-![image](https://github.com/user-attachments/assets/ead027b8-9d60-46c0-ba0b-799f42238f91)
-![image](https://github.com/user-attachments/assets/8ff6ad60-a863-458a-9f4f-8e5611b41b56)
-![image](https://github.com/user-attachments/assets/0483e282-1f72-43e1-a1d0-b7142ecfd927)
-
+![image](https://github.com/user-attachments/assets/8ce926f1-15b9-46da-91e3-016618f72161)
+![image](https://github.com/user-attachments/assets/e1e91e47-6740-4d09-ab93-0c0c70e30fb7)
+![image](https://github.com/user-attachments/assets/93202baa-d9ba-44ab-90e5-4a4c5111cf20)
+![image](https://github.com/user-attachments/assets/aa7d7dda-8f15-4616-a42d-439008ca115c)
+![image](https://github.com/user-attachments/assets/e34468f3-e1fb-4eb6-88fd-0bde9588bc6c)
+https://disk.yandex.ru/d/oza0mI8tXAn-3g - pkt файл
 
 Задание 2
-![image](https://github.com/user-attachments/assets/761c0b34-3820-4945-9f6e-89afc9e6c891)
-![image](https://github.com/user-attachments/assets/48433cba-6976-4bd3-b16c-11151f701d5e)
 
+![image](https://github.com/user-attachments/assets/ab6c612e-e626-40ed-b84d-ba5c08ab05b2)
+![image](https://github.com/user-attachments/assets/ff992aed-2655-485f-a1da-9693e02e6de6)
+![image](https://github.com/user-attachments/assets/5395f175-fd05-4527-a03a-598a687fb83c)
+![image](https://github.com/user-attachments/assets/f54444d2-3d3c-4c38-be52-8b336cf1a2c4)
+![image](https://github.com/user-attachments/assets/c16d6e7b-6cb9-492c-aa46-7d3a5f5e9f85)
+![image](https://github.com/user-attachments/assets/ae523541-1ffe-48ae-9c19-b28b76875577)
 
-
-Задание 3
-![image](https://github.com/user-attachments/assets/8fb9affa-eeb4-4118-83dd-d8ee0ee83e89)
-![image](https://github.com/user-attachments/assets/163ea835-3384-4aee-a382-da0d83d0ca22)
-![image](https://github.com/user-attachments/assets/f7466895-180f-45e4-8b7a-d84e79629626)
-![image](https://github.com/user-attachments/assets/2f6ede61-896f-41cb-93e6-143678505898)
-![image](https://github.com/user-attachments/assets/2c9f0647-976c-44fb-859f-318d19134fc1)
-
-Задание 4
-![image](https://github.com/user-attachments/assets/60f70de1-4fcf-4d8a-a67e-0f2991f673e5)
 
 
 
