@@ -22,6 +22,8 @@
 ![image](https://github.com/user-attachments/assets/bf452f77-ec40-454e-8b9f-ff59d63342e4)
 rsync -avP --checksum --exclude=".*" ~/ /tmp/backup
 backup.sh  https://github.com/kensoul123/-DevOps.-CI-CD-/blob/main/back.sh
+
+
 Задание 2
 
 ![image](https://github.com/user-attachments/assets/3f67910c-1217-49fd-bd3d-4df9a1f93b10)
