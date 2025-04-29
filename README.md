@@ -19,23 +19,13 @@
 ### Дополнительные материалы, которые могут быть полезны для выполнения задания
 
 Задание 1
-![image](https://github.com/user-attachments/assets/8ce926f1-15b9-46da-91e3-016618f72161)
-![image](https://github.com/user-attachments/assets/e1e91e47-6740-4d09-ab93-0c0c70e30fb7)
-![image](https://github.com/user-attachments/assets/93202baa-d9ba-44ab-90e5-4a4c5111cf20)
-![image](https://github.com/user-attachments/assets/aa7d7dda-8f15-4616-a42d-439008ca115c)
-![image](https://github.com/user-attachments/assets/e34468f3-e1fb-4eb6-88fd-0bde9588bc6c)
-https://disk.yandex.ru/d/oza0mI8tXAn-3g - pkt файл
+![image](https://github.com/user-attachments/assets/bf452f77-ec40-454e-8b9f-ff59d63342e4)
+rsync -avP --checksum --exclude=".*" ~/ /tmp/backup
 
 Задание 2
 
-![image](https://github.com/user-attachments/assets/ab6c612e-e626-40ed-b84d-ba5c08ab05b2)
-![image](https://github.com/user-attachments/assets/ff992aed-2655-485f-a1da-9693e02e6de6)
-![image](https://github.com/user-attachments/assets/5395f175-fd05-4527-a03a-598a687fb83c)
-![image](https://github.com/user-attachments/assets/f54444d2-3d3c-4c38-be52-8b336cf1a2c4)
-![image](https://github.com/user-attachments/assets/c16d6e7b-6cb9-492c-aa46-7d3a5f5e9f85)
-![image](https://github.com/user-attachments/assets/ae523541-1ffe-48ae-9c19-b28b76875577)
+![image](https://github.com/user-attachments/assets/3f67910c-1217-49fd-bd3d-4df9a1f93b10)
 
-
-
+0 0 * * * /home/night/backup.sh
 
 
