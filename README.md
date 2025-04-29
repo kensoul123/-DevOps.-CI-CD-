@@ -25,7 +25,7 @@ rsync -avP --checksum --exclude=".*" ~/ /tmp/backup
 Задание 2
 
 ![image](https://github.com/user-attachments/assets/3f67910c-1217-49fd-bd3d-4df9a1f93b10)
-
+https://github.com/kensoul123/-DevOps.-CI-CD-/blob/main/nginx
 0 0 * * * /home/night/backup.sh
 
 
