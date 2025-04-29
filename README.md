@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "`Disaster Recovery. FHRP и Keepalived`" - `Гречихин Юрий`
+# Домашнее задание к занятию "`Кластеризация и балансировка нагрузки`" - `Гречихин Юрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -19,16 +19,19 @@
 ### Дополнительные материалы, которые могут быть полезны для выполнения задания
 
 Задание 1
-![image](https://github.com/user-attachments/assets/bf452f77-ec40-454e-8b9f-ff59d63342e4)
-rsync -avP --checksum --exclude=".*" ~/ /tmp/backup
-backup.sh  https://github.com/kensoul123/-DevOps.-CI-CD-/blob/main/back.sh
-
+![image](https://github.com/user-attachments/assets/78a03f6a-817b-41ad-95b5-8ee8e581ac5e)
+![image](https://github.com/user-attachments/assets/7c662a97-c123-4f39-8e31-22ff9da8f633)
+![image](https://github.com/user-attachments/assets/87f1f345-94c3-4800-a0cb-0e5fa74851c5)
+![image](https://github.com/user-attachments/assets/10f2c1a4-ed95-41d5-8715-af4b3a41c9ce)
+ссылка haproxy.cfg - https://github.com/kensoul123/-DevOps.-CI-CD-/blob/main/haproxy.cfg
 
 Задание 2
+![image](https://github.com/user-attachments/assets/62e2ea24-4a9b-48e6-b845-fd930f2cb73a)
+![image](https://github.com/user-attachments/assets/6930cf0a-0261-4341-a22f-a14fec39b353)
+![image](https://github.com/user-attachments/assets/1dc50ccf-2cce-4783-b2e7-2336893b41c0)
+![image](https://github.com/user-attachments/assets/f68e3cdf-bf5b-4c04-8aec-235995e849c6)
+![image](https://github.com/user-attachments/assets/97d43af6-e78a-4359-8209-26c696b73ffa)
+ ссылка haproxy weigh - https://github.com/kensoul123/-DevOps.-CI-CD-/blob/main/haproxy2.cfg
 
-![image](https://github.com/user-attachments/assets/3f67910c-1217-49fd-bd3d-4df9a1f93b10)
-
-/var/spool/cron/crontabs/nginx      https://github.com/kensoul123/-DevOps.-CI-CD-/blob/main/nginx
-0 0 * * * /home/night/backup.sh
 
 
