@@ -79,6 +79,7 @@ JSONB (лендинги, база знаний).
 BEGIN; UPDATE accounts SET balance = balance - 100.00 WHERE name = 'bank card'; -- списывается 100 руб. со счёта UPDATE accounts SET balance = balance + 100.00 WHERE name = 'phone number'; -- начисляется на номер телефона 100 руб. COMMIT;
 
 Транзакция завершится успешно если все концепции ACID будут выполненны.
+
 2.1. Автоплатёж*
 Дополнительные шаги:
 
