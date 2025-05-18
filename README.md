@@ -75,10 +75,10 @@ JSONB (лендинги, база знаний).
 
 Задание 2. Транзакции
 2.1. Пополнение баланса телефона
-Основые концепции транзакции описываются аббревиатурой ACID-Atomicity(атомарность), Consistency(согласованность), Isolation(изолированность), Durability(долговечность) В PostgreSQL транзакция определяется набором команд, которые окружены операторами BEGIN и COMMIT:
-BEGIN; UPDATE accounts SET balance = balance - 100.00 WHERE name = 'bank card'; -- списывается 100 руб. со счёта UPDATE accounts SET balance = balance + 100.00 WHERE name = 'phone number'; -- начисляется на номер телефона 100 руб. COMMIT;
-
-Транзакция завершится успешно если все концепции ACID будут выполненны.
+1. Основые концепции транзакции описываются аббревиатурой ACID-Atomicity(атомарность), Consistency(согласованность), Isolation(изолированность), Durability(долговечность) 
+2. В PostgreSQL транзакция определяется набором команд, которые окружены операторами BEGIN и COMMIT:
+2.1 - BEGIN; UPDATE accounts SET balance = balance - 100.00 WHERE name = 'bank card'; 2.2 - -- списывается 100 руб. со счёта UPDATE accounts SET balance = balance + 100.00 WHERE name = 'phone number';2.3 - -- начисляется на номер телефона 100 руб. COMMIT;
+3. Транзакция завершится успешно если все концепции ACID будут выполненны.
 
 2.1. Автоплатёж*
 Дополнительные шаги:
