@@ -79,7 +79,55 @@ JSONB (лендинги, база знаний).
 2. В PostgreSQL транзакция определяется набором команд, которые окружены операторами BEGIN и COMMIT:
 2.1 - BEGIN; UPDATE accounts SET balance = balance - 100.00 WHERE name = 'bank card'; 2.2 - -- списывается 100 руб. со счёта UPDATE accounts SET balance = balance + 100.00 WHERE name = 'phone number';2.3 - -- начисляется на номер телефона 100 руб. COMMIT;
 3. Транзакция завершится успешно если все концепции ACID будут выполненны.
+Пример алгоритма концепциий при выполнении транзакции:
+-- 1. Авторизация и верификация пользователя (предполагается, что это выполнено ранее)
+-- Проверяем, что пользователь существует и активен
+-- Проверяем, что сумма пополнения допустима
 
+-- 3. Проверка наличия достаточных средств на банковской карте
+SELECT balance FROM accounts WHERE user_id = 123 AND account_type = 'bank_card' FOR UPDATE;
+
+-- 4. Списание суммы со счёта банковской карты
+UPDATE accounts 
+SET balance = balance - 100.00 
+WHERE user_id = 123 AND account_type = 'bank_card' AND balance >= 100.00;
+
+-- Если на предыдущем шаге не было обновлено ни одной строки (из-за условия balance >= 100),
+-- это будет обнаружено при проверке в приложении и транзакция откатится
+
+-- 5. Фиксация операции пополнения в банковской системе (без реального пополнения телефона)
+INSERT INTO payment_transactions (
+    user_id, 
+    operation_type, 
+    amount, 
+    source_account, 
+    target_phone, 
+    status, 
+    created_at
+) VALUES (
+    123,
+    'phone_topup',
+    100.00,
+    'bank_card_XXXXXX',
+    '+79001234567',
+    'completed',
+    NOW()
+);
+
+-- 6. Логирование операции (дополнительная запись для аудита)
+INSERT INTO transaction_logs (
+    transaction_id, 
+    user_id, 
+    action, 
+    details
+) VALUES (
+    currval('payment_transactions_id_seq'),
+    123,
+    'PHONE_TOPUP',
+    '{"amount": 100.00, "phone": "+79001234567"}'
+);
+
+COMMIT; -- 7. Завершение транзакции
 2.1. Автоплатёж*
 Дополнительные шаги:
 
