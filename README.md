@@ -29,19 +29,24 @@
 
 Снижение затрат на базы данных. Кэширование на стороне клиента снижает объём данных, которые необходимо передавать между сервером и пользователем, что позволяет экономить средства.
 
+
+
 Задание 2.
 Установите и запустите memcached.
+
 ![image](https://github.com/user-attachments/assets/8dc6def2-14c2-4c03-82d2-49d831815244)
 
 
 Задание 3.
 Удаление по TTL в Memcached
+
 ![image](https://github.com/user-attachments/assets/37070441-4c6f-4e40-a701-9a66e2f15e39)
 
 
 
 Задание 4.
 Запись данных в Redis
+
 ![image](https://github.com/user-attachments/assets/0e632fd3-1901-4a26-a29a-52393cde202e)
 
 
