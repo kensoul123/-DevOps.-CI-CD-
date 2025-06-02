@@ -32,9 +32,13 @@
 Задание 2.
 Установите и запустите memcached.
 ![image](https://github.com/user-attachments/assets/8dc6def2-14c2-4c03-82d2-49d831815244)
+
+
 Задание 3.
 Удаление по TTL в Memcached
 ![image](https://github.com/user-attachments/assets/37070441-4c6f-4e40-a701-9a66e2f15e39)
+
+
 
 Задание 4.
 Запись данных в Redis
