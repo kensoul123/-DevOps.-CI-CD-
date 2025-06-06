@@ -21,16 +21,19 @@
 Задание 1. Elasticsearch
 Установите и запустите Elasticsearch, после чего поменяйте параметр cluster_name на случайный.
 Приведите скриншот команды curl -X GET 'localhost:9200/_cluster/health?pretty, сделанной на сервере с установленным Elasticsearch. Где будет виден нестандартный cluster_name.
+
 ![image](https://github.com/user-attachments/assets/b6af3254-12a6-4153-8e0d-08c1bbccc757)
 
 Задание 2. Kibana
 Установите и запустите Kibana.
 Приведите скриншот интерфейса Kibana на странице http://<ip вашего сервера>:5601/app/dev_tools#/console, где будет выполнен запрос GET /_cluster/health?pretty.
+
 ![image](https://github.com/user-attachments/assets/06375343-6adf-4a44-9c6e-0e419a55dc88)
 
 Задание 3. Logstash
 Установите и запустите Logstash и Nginx. С помощью Logstash отправьте access-лог Nginx в Elasticsearch.
 Приведите скриншот интерфейса Kibana, на котором видны логи Nginx.
+
 ![image](https://github.com/user-attachments/assets/b9f1ad96-8416-4cff-9c89-6a943d1cba80)
 
 Задание 4. Filebeat
