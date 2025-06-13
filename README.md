@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "ELK" - `Гречихин Юрий`
+# Домашнее задание к занятию "RabbitMQ" - `Гречихин Юрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -18,28 +18,45 @@
    
 ### Дополнительные материалы, которые могут быть полезны для выполнения задания
 
-Задание 1. Elasticsearch
-Установите и запустите Elasticsearch, после чего поменяйте параметр cluster_name на случайный.
-Приведите скриншот команды curl -X GET 'localhost:9200/_cluster/health?pretty, сделанной на сервере с установленным Elasticsearch. Где будет виден нестандартный cluster_name.
-
-![image](https://github.com/user-attachments/assets/b6af3254-12a6-4153-8e0d-08c1bbccc757)
-
-Задание 2. Kibana
-Установите и запустите Kibana.
-Приведите скриншот интерфейса Kibana на странице http://<ip вашего сервера>:5601/app/dev_tools#/console, где будет выполнен запрос GET /_cluster/health?pretty.
-
-![image](https://github.com/user-attachments/assets/06375343-6adf-4a44-9c6e-0e419a55dc88)
-
-Задание 3. Logstash
-Установите и запустите Logstash и Nginx. С помощью Logstash отправьте access-лог Nginx в Elasticsearch.
-Приведите скриншот интерфейса Kibana, на котором видны логи Nginx.
-
-![image](https://github.com/user-attachments/assets/b9f1ad96-8416-4cff-9c89-6a943d1cba80)
-
-Задание 4. Filebeat
-Установите и запустите Filebeat. Переключите поставку логов Nginx с Logstash на Filebeat.
-Приведите скриншот интерфейса Kibana, на котором видны логи Nginx, которые были отправлены через Filebeat.
-
-![image](https://github.com/user-attachments/assets/ff245645-5422-4991-b549-9d64f41fdcb6)
+Задание 1. Установка RabbitMQ
+![image](https://github.com/user-attachments/assets/68de260a-1114-4066-85c1-39b1f559fff1)
 
 
+Задание 2. Отправка и получение сообщений
+
+![image](https://github.com/user-attachments/assets/8215bfbd-edaa-4c02-9cb8-c1b1dd8a05fc)
+
+
+![image](https://github.com/user-attachments/assets/f7e2d9c8-3cd3-4876-a5fe-4f5d921d5cba)
+
+
+Задание 3. Подготовка HA кластера
+
+
+![image](https://github.com/user-attachments/assets/269c2ec3-f278-42d4-85fd-c2a263c0ac03)
+
+
+![image](https://github.com/user-attachments/assets/90c4283c-e0a4-4334-8525-890565e82b9a)
+
+
+![image](https://github.com/user-attachments/assets/bd03f588-d0fb-4fd5-9f38-2cd5c3bea95d)
+
+
+
+![image](https://github.com/user-attachments/assets/d2f8471a-f979-4cb9-8779-fd68c41fe776)
+
+
+
+![image](https://github.com/user-attachments/assets/ed39e83c-851b-4814-ae23-b8743147b562)
+
+
+
+![image](https://github.com/user-attachments/assets/5b67004d-0095-46a3-b83f-79c0baec79a3)
+
+
+
+![image](https://github.com/user-attachments/assets/97624f6c-bb55-40c1-a7f3-32c3d8b86fd5)
+
+
+
+![image](https://github.com/user-attachments/assets/a93cc27a-f137-4056-ab65-5323ded6cf61)
