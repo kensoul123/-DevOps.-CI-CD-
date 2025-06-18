@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "RabbitMQ" - `Гречихин Юрий`
+# Домашнее задание к занятию "Работа с данными (DDL/DML)" - `Гречихин Юрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -17,46 +17,43 @@
 Желаем успехов в выполнении домашнего задания!
    
 ### Дополнительные материалы, которые могут быть полезны для выполнения задания
+Задание 1
+1.1. Поднимите чистый инстанс MySQL версии 8.0+. Можно использовать локальный сервер или контейнер Docker.
 
-Задание 1. Установка RabbitMQ
-![image](https://github.com/user-attachments/assets/68de260a-1114-4066-85c1-39b1f559fff1)
+1.2. Создайте учётную запись sys_temp.
 
+1.3. Выполните запрос на получение списка пользователей в базе данных. (скриншот)
 
-Задание 2. Отправка и получение сообщений
+1.4. Дайте все права для пользователя sys_temp.
 
-![image](https://github.com/user-attachments/assets/8215bfbd-edaa-4c02-9cb8-c1b1dd8a05fc)
+1.5. Выполните запрос на получение списка прав для пользователя sys_temp. (скриншот)
 
+1.6. Переподключитесь к базе данных от имени sys_temp.
 
-![image](https://github.com/user-attachments/assets/f7e2d9c8-3cd3-4876-a5fe-4f5d921d5cba)
+Для смены типа аутентификации с sha2 используйте запрос:
 
+ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 
-Задание 3. Подготовка HA кластера
+1.6. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачайте дамп базы данных.
 
+1.7. Восстановите дамп в базу данных.
 
-![image](https://github.com/user-attachments/assets/269c2ec3-f278-42d4-85fd-c2a263c0ac03)
+1.8. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
 
+Результатом работы должны быть скриншоты обозначенных заданий, а также простыня со всеми запросами.
+Ответ
+![image](https://github.com/user-attachments/assets/e0afe694-ead1-4503-927b-7ec3ae1d9371)
+![image](https://github.com/user-attachments/assets/3d8a9902-ed9c-42d5-a8ec-0281fcd734a0)
+![image](https://github.com/user-attachments/assets/e5c03e84-fd98-4098-8c85-48b6f3bfd34e)
 
-![image](https://github.com/user-attachments/assets/90c4283c-e0a4-4334-8525-890565e82b9a)
+Задание 2
+Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
 
+Название таблицы | Название первичного ключа
+customer         | customer_id
 
-![image](https://github.com/user-attachments/assets/bd03f588-d0fb-4fd5-9f38-2cd5c3bea95d)
-
-
-
-![image](https://github.com/user-attachments/assets/d2f8471a-f979-4cb9-8779-fd68c41fe776)
-
-
-
-![image](https://github.com/user-attachments/assets/ed39e83c-851b-4814-ae23-b8743147b562)
-
-
-
-![image](https://github.com/user-attachments/assets/5b67004d-0095-46a3-b83f-79c0baec79a3)
-
-
-
-![image](https://github.com/user-attachments/assets/97624f6c-bb55-40c1-a7f3-32c3d8b86fd5)
+![image](https://github.com/user-attachments/assets/dba66636-8b63-4c5d-820d-3e4fea002b01)
 
 
 
-![image](https://github.com/user-attachments/assets/a93cc27a-f137-4056-ab65-5323ded6cf61)
+
