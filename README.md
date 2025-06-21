@@ -19,20 +19,15 @@
 Одним запросом получите информацию о магазине, в котором обслуживается более 300 покупателей, и выведите в результат следующую информацию:
 
 SELECT concat(s.first_name  , ' ', s.last_name) as Имя , c.city,  count(c2.customer_id) as Количество 
-
 FROM staff s 
-
 JOIN address a  ON s.address_id = a.address_id
- 
 JOIN city c  ON a.city_id = c.city_id
-
 JOIN store s2 ON s2.store_id = s.store_id 
-
 JOIN customer c2 ON s2.store_id = c2.store_id 
-
 GROUP BY s.first_name , s.last_name , c.city 
-
 HAVING Количество > 300;
+
+![image](https://github.com/user-attachments/assets/983ad9c6-4b49-4a12-a6b7-4cfa4a2e622a)
 
 фамилия и имя сотрудника из этого магазина;
 город нахождения магазина;
@@ -41,23 +36,22 @@ HAVING Количество > 300;
 Получите количество фильмов, продолжительность которых больше средней продолжительности всех фильмов.
 
 SELECT  count(`length`) 
-
 FROM film 
-
 WHERE `length` > (SELECT avg(`length`)FROM film )
+
+![image](https://github.com/user-attachments/assets/63eac6d2-3c0f-42f2-af21-0e71b939b078)
 
 Задание 3
 Получите информацию, за какой месяц была получена наибольшая сумма платежей, и добавьте информацию по количеству аренд за этот месяц.
 
 SELECT DATE_FORMAT(p.payment_date, '%Y-%M') AS Дата , (sum(p.amount )) AS Сумма , count((p.rental_id )) AS Аренд
-
 FROM payment p 
-
 GROUP BY Дата
-
 ORDER BY Сумма DESC
-
 LIMIT 1;
+
+![image](https://github.com/user-attachments/assets/85b058ca-5ccd-4005-bd5b-f6e8b0d3c100)
+
 
 
 
