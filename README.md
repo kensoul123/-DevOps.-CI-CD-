@@ -1,4 +1,4 @@
-# Домашнее задание к занятию "SQL. Часть 2" - `Гречихин Юрий`
+# Домашнее задание к занятию "Репликация и масштабирование. Часть 1" - `Гречихин Юрий`
 
 
 ### Инструкция по выполнению домашнего задания
@@ -15,42 +15,32 @@
    6. Любые вопросы по выполнению заданий спрашивайте в чате учебной группы и/или в разделе “Вопросы по заданию” в личном кабинете.
    
 Желаем успехов в выполнении домашнего задания!
-   Задание 1
-Одним запросом получите информацию о магазине, в котором обслуживается более 300 покупателей, и выведите в результат следующую информацию:
+Задание 1
+На лекции рассматривались режимы репликации master-slave, master-master, опишите их различия.
+В master-slave, только один сервер (master) принимает записи, а остальные (slaves) лишь зеркалируют данные для чтения. В master-master, несколько серверов могут принимать записи, что теоретически лучше для масштабирования записи, но может привести к конфликтам при синхронизации данных.
 
-SELECT concat(s.first_name  , ' ', s.last_name) as Имя , c.city,  count(c2.customer_id) as Количество 
-FROM staff s 
-JOIN address a  ON s.address_id = a.address_id
-JOIN city c  ON a.city_id = c.city_id
-JOIN store s2 ON s2.store_id = s.store_id 
-JOIN customer c2 ON s2.store_id = c2.store_id 
-GROUP BY s.first_name , s.last_name , c.city 
-HAVING Количество > 300;
-
-![image](https://github.com/user-attachments/assets/983ad9c6-4b49-4a12-a6b7-4cfa4a2e622a)
-
-фамилия и имя сотрудника из этого магазина;
-город нахождения магазина;
-количество пользователей, закреплённых в этом магазине.
 Задание 2
-Получите количество фильмов, продолжительность которых больше средней продолжительности всех фильмов.
+Выполните конфигурацию master-slave репликации, примером можно пользоваться из лекции.
 
-SELECT  count(`length`) 
-FROM film 
-WHERE `length` > (SELECT avg(`length`)FROM film )
+Приложите скриншоты конфигурации, выполнения работы: состояния и режимы работы серверов.
 
-![image](https://github.com/user-attachments/assets/63eac6d2-3c0f-42f2-af21-0e71b939b078)
+![image](https://github.com/user-attachments/assets/745c4152-5c13-4075-9b14-c20626b8807d)
 
-Задание 3
-Получите информацию, за какой месяц была получена наибольшая сумма платежей, и добавьте информацию по количеству аренд за этот месяц.
+![image](https://github.com/user-attachments/assets/7747e808-aa1d-4fe6-82b0-dd6506506553)
 
-SELECT DATE_FORMAT(p.payment_date, '%Y-%M') AS Дата , (sum(p.amount )) AS Сумма , count((p.rental_id )) AS Аренд
-FROM payment p 
-GROUP BY Дата
-ORDER BY Сумма DESC
-LIMIT 1;
+![image](https://github.com/user-attachments/assets/39301312-7e3f-4b92-b2a8-d2431112e14c)
 
-![image](https://github.com/user-attachments/assets/85b058ca-5ccd-4005-bd5b-f6e8b0d3c100)
+![image](https://github.com/user-attachments/assets/174bff3e-7487-4a77-af7c-e0b379ad3e97)
+
+![image](https://github.com/user-attachments/assets/82c4cd2b-8c75-4825-80f5-f6abca0fb096)
+
+![image](https://github.com/user-attachments/assets/babd288d-b2d6-47e2-8171-fb86c363c24f)
+
+
+
+
+
+
 
 
 
