@@ -17,14 +17,18 @@
 Желаем успехов в выполнении домашнего задания!
 Задание 1. 
 1.Установите eCryptfs.
+
 2.Добавьте пользователя cryptouser.
+
 3.Зашифруйте домашний каталог пользователя с помощью eCryptfs.
 <img width="981" height="606" alt="image" src="https://github.com/user-attachments/assets/0acccc86-e4e1-40c0-9d03-591bd900b923" />
 <img width="898" height="299" alt="image" src="https://github.com/user-attachments/assets/2128c6c9-5de6-46b7-81f0-ad351544496d" />
 <img width="921" height="483" alt="image" src="https://github.com/user-attachments/assets/51ffe267-5da7-4e52-83a2-275b87bef3e9" />
 Задание 2.
 1.Установите поддержку LUKS.
+
 2.Создайте небольшой раздел, например, 100 Мб.
+
 3.Зашифруйте созданный раздел с помощью LUKS.
 
 apt install gparted cryptsetup
