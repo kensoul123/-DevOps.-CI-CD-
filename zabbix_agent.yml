@@ -1,0 +1,31 @@
+---
+- name: Установка Zabbix Agent на группу серверов web
+  hosts: web
+  become: true
+  vars:
+    zabbix_server: 10.10.4.5
+  tasks:
+    - name: Установка необходимых пакетов
+      apt:
+        name: zabbix-agent
+        state: present
+
+    - name: Создание директории для логов Zabbix Agent
+      command: mkdir -p /var/log/zabbix/
+      become_user: root
+
+    - name: Установка прав на директорию логов Zabbix Agent
+      command: chown zabbix /var/log/zabbix/
+      become_user: root
+
+    - name: Копирование конфигурационного файла Zabbix Agent
+      template:
+        src: /home/danil21/ansible/zabbix_agentd.conf.j2
+        dest: /etc/zabbix/zabbix_agentd.conf
+      notify: restart zabbix-agent
+
+  handlers:
+    - name: restart zabbix-agent
+      service:
+        name: zabbix-agent
+        state: restarted

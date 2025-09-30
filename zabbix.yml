@@ -1,0 +1,73 @@
+---
+- name: Установка Zabbix
+  hosts: mon
+  become: true
+  vars:
+    pass_zabbixdb: zabbix
+
+  tasks:
+    - name: Загрузка Zabbix репозитория
+      shell: wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb
+      args:
+        chdir: /tmp
+
+    - name: Установка Zabbix репозитория
+      shell: dpkg -i zabbix-release_6.0-5+debian12_all.deb
+      args:
+        chdir: /tmp
+
+    - name: Обновление пакетов
+      apt:
+        update_cache: yes
+
+    - name: Установка необходимых пакетов Zabbix
+      apt:
+        name:
+          - apache2
+          - postgresql
+          - postgresql-contrib
+          - python3-pexpect
+          - python3-pip
+          - python3-dev
+          - python3-venv
+          - python3-psycopg2
+          - zabbix-server-pgsql
+          - zabbix-frontend-php
+          - php8.2-pgsql
+          - zabbix-apache-conf
+          - zabbix-sql-scripts
+          - zabbix-agent
+        state: present
+
+    - name: Создание пользователя PostgreSQL для Zabbix
+      ansible.builtin.expect:
+        command: sudo -u postgres createuser --pwprompt zabbix
+        responses:
+          (?i).*(Enter password for new role)(.*):
+           - '{{ pass_zabbixdb }}'
+          (?i).*(Enter it again)(.*):
+           - '{{ pass_zabbixdb }}'
+
+    - name: Создание базы данных PostgreSQL для Zabbix
+      shell: >
+        sudo -u postgres createdb -O zabbix zabbix
+
+    - name: Импортируеv начальную схему и данные
+      shell:
+        zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
+
+    - name: Настройка DBPassword в конфигурационном файле Zabbix
+      lineinfile:
+        path: /etc/zabbix/zabbix_server.conf
+        regexp: '^DBPassword='
+        line: 'DBPassword=zabbix'
+    - name: Перезапуск служб Zabbix
+      service:
+        name: "{{ item }}"
+        state: restarted
+        enabled: yes
+
+      loop:
+        - zabbix-server
+        - zabbix-agent
+        - apache2

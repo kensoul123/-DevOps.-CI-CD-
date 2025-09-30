@@ -1,0 +1,27 @@
+---
+- name: Установка Filebeat
+  hosts: web
+  become: yes
+  gather_facts: true
+  vars:
+    kibana_host: 10.10.4.3:5601
+    elastic_host: 10.10.3.4:9200
+  tasks:
+  - name: Устанавливаем filebeat
+    apt:
+      deb: "https://mirror.yandex.ru/mirrors/elastic/7/pool/main/f/filebeat/filebeat-7.15.1-amd64.deb"
+
+  - name: Копируем конфиг filebeat
+    template:
+      src: /home/danil21/ansible/filebeat.j2
+      dest: /etc/filebeat/filebeat.yml
+
+  - name: daemon_reload
+    systemd:
+      daemon_reload: true
+
+  - name: Перезапускаем filebeat и добавляем в автозагрузку
+    service:
+      name: filebeat
+      state: restarted
+      enabled: yes

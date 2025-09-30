@@ -1,0 +1,35 @@
+---
+- name: Установка Nginx и настройка странички
+  hosts: web
+  become: yes
+
+  tasks:
+
+    - name: Установка Nginx
+      apt:
+        name: nginx
+        state: latest
+        update_cache: yes
+    
+    - name: Запуск Nginx
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+    
+    - name: Создание HTML-странички
+      copy:
+        content: "<html><head><title>Netology diplom DruzhininDA</title></head><body><h1>Netology diplom DruzhininDA</h1></body></html>"
+        dest: /var/www/html/index.html
+        owner: www-data
+        group: www-data
+
+      notify:
+        - Restart Nginx
+
+  handlers:
+    - name: Restart Nginx
+      service:
+        name: nginx
+        state: restarted
+
