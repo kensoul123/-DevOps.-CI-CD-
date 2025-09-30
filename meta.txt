@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: user
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCwJoV+Pw5CB/uOEZvAb1x7qt97Ux/npxD/fxOA7RPpru2FrpZPz/Ly+CfF3WsspUPBZtlXErJcSMJqFUjljzB4oNOlF1w37+HMJup0qLmrvoVhdJIwkgIMf60y6JCMBuhM9J6cLr+MMOpLWpYNyE0UbH3F5nciOcsd47xDa1uogf8RKeVQDepdo1wRXz0hcGAnZ1PQ1KUaZVugvdv64fAR7Gr3473iD+q+9yNeXKpirnkcrZ7K8PNA+1VcdF2gvZn0r5510oz7x1z5LuvN6eLKYkz0NkZUY723kZBP2bLo3jMr2YA31PzDVD9tkJHfPPnpm3IOpOAHgVlvJOeio/hFRwix/RRVRYbd6glu5p7GMjIzzB06Qyja2SadIyypcctFKNXjnFXl3eYa4VmHk3FuoOEIXj5A+WQVQz0/WFovrGx6yKs8jFoC8Nfu+ujnYFyldz8sojvgPXPv6dfqsvEt0QBbfKJJ1Mp1bCFBhn2uCDtKYjX3+7uKrp5qoRpI5qc= danil21@danil21-VirtualBox
